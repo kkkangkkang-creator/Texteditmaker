@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Side Story 말하기를 카드로 미리 보고 티스토리용 HTML로 복사하세요.">
+<title>Texteditmaker · Side Story 카드</title>
+<style>
+:root{color-scheme:light;--bg:#f4f3ef;--paper:#fffefa;--ink:#292e2b;--muted:#777d76;--line:#dedfd7;--accent:#5c735c;--wash:#e9eee4;font:15px/1.6 system-ui,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif}
+*{box-sizing:border-box}[hidden]{display:none!important}body{margin:0;background:var(--bg);color:var(--ink)}button,input,select,textarea{font:inherit;color:inherit}button,select{cursor:pointer}button{min-height:42px;border:1px solid var(--line);background:var(--paper);border-radius:8px;padding:8px 14px;font-size:13px;font-weight:600}button:hover{border-color:var(--accent);background:var(--wash)}button:disabled{opacity:.45;cursor:default}.primary{background:var(--accent);color:#fff;border-color:var(--accent)}.primary:hover{background:#465e47;color:#fff}:focus-visible{outline:2px solid var(--accent);outline-offset:3px}input,select{min-height:40px;border:1px solid var(--line);border-radius:6px;background:var(--paper);padding:6px 9px;max-width:100%}input[type=checkbox]{min-height:0;width:17px;height:17px;accent-color:var(--accent)}input[type=color]{width:40px;padding:3px;cursor:pointer}input[type=range]{width:100%;padding:0;accent-color:var(--accent)}textarea{display:block;width:100%;resize:vertical;border:1px solid var(--line);border-radius:8px;background:var(--paper);padding:16px;line-height:1.8;font-size:15px}label{font-size:13px}h1,h2,p{margin:0}header.masthead{max-width:1480px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:23px 32px;border-bottom:1px solid var(--line);gap:16px}.brand{font-family:Georgia,serif;font-size:27px;letter-spacing:-1px}.brand em{color:var(--accent);font-style:normal}.masthead small{color:var(--muted);font-size:11px;letter-spacing:.12em}.masthead a{font-size:12px;color:var(--muted);text-decoration:none}.intro{max-width:1480px;margin:auto;padding:28px 32px 22px}.eyebrow{font-size:10px;letter-spacing:.15em;font-weight:700;color:var(--accent);margin-bottom:6px}.intro h1{font-size:24px;letter-spacing:-.04em;font-weight:650}.intro p{font-size:13px;color:var(--muted);margin-top:8px}.workspace{max-width:1480px;display:grid;grid-template-columns:minmax(320px,.8fr) minmax(0,1.25fr);gap:24px;margin:auto;padding:0 32px 32px}.editor,.viewer{min-width:0}.panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}.panel-head h2{font-size:13px;font-weight:650}.panel-head h2 span{color:var(--accent);margin-right:8px;font-size:11px;font-variant-numeric:tabular-nums}.quiet{padding:4px 9px;min-height:32px;border:0;background:transparent;font-size:12px;font-weight:500;color:var(--muted)}#source{min-height:350px;height:44vh}.hint{font-size:11px;color:var(--muted);margin-top:10px;line-height:1.8}.options{margin-top:22px;border-top:1px solid var(--line);padding-top:16px}.options>summary{font-size:13px;font-weight:650;cursor:pointer;padding-bottom:12px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px;min-width:0}.wide{grid-column:1/-1}.inline{display:flex;align-items:center;gap:10px}.check{display:flex;align-items:center;gap:7px}.caption{font-size:11px;color:var(--muted)}.preview-shell{background:#e9e9e2;border:1px solid var(--line);border-radius:12px;padding:22px;min-height:520px}.preview-toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px;color:var(--muted);font-size:11px}.segmented{display:flex;background:#dfe1d9;border-radius:6px;padding:3px}.segmented button{min-height:28px;border:0;padding:3px 10px;background:transparent;border-radius:4px;font-size:11px;color:var(--muted)}.segmented button[aria-pressed=true]{background:var(--paper);color:var(--ink)}#preview{display:block;width:100%;height:580px;border:0;border-radius:4px;background:transparent;transition:max-width .15s;max-width:100%;margin:0 auto}#preview.mobile{max-width:375px}.export{margin-top:16px;display:flex;gap:8px;flex-wrap:wrap}.export .primary{flex:1}.output{margin-top:14px}.output summary{font-size:12px;color:var(--muted);cursor:pointer}.output textarea{margin-top:9px;min-height:180px;font:11px/1.6 ui-monospace,monospace;white-space:pre;overflow:auto}.guide{border-top:1px solid var(--line);margin-top:22px;padding-top:16px;font-size:12px;line-height:1.9;color:var(--muted)}.guide strong{color:var(--ink);font-weight:600}.guide ol{padding-left:18px;margin:8px 0}.status{min-height:22px;font-size:12px;color:var(--accent);margin-top:8px}.error{color:#a73c38}.footer{max-width:1480px;margin:auto;padding:0 32px 24px;font-size:10px;letter-spacing:.05em;color:var(--muted)}.empty{display:grid;place-content:center;text-align:center;min-height:440px;border:1px dashed #c6cbbf;border-radius:8px;padding:24px;color:var(--muted)}.empty b{font:italic 30px Georgia,serif;color:#8b9983;display:block;margin-bottom:16px}.empty p{font-size:13px}.empty button{margin-top:18px;background:transparent}.notice{font-size:11px;color:var(--muted);padding:8px 0;line-height:1.8}.sample-actions{display:flex;gap:3px}.format-status{font-size:11px;color:var(--accent)}
+@media(min-width:1000px){.viewer{position:sticky;top:18px;align-self:start}}@media(max-width:760px){header.masthead{padding:18px}.masthead small{display:none}.intro{padding:23px 18px 20px}.intro h1{font-size:21px}.workspace{grid-template-columns:1fr;padding:0 14px 24px;gap:24px}.editor{padding:0 4px}#source{height:300px;min-height:260px}.preview-shell{padding:12px;min-height:480px}#preview{height:560px}.footer{padding:0 18px 20px}.brand{font-size:25px}.fields{gap:12px}.export button{padding:8px 10px}}
+</style>
+</head>
+<body>
+<header class="masthead"><div class="brand">Textedit<em>maker.</em></div><small>SIDE STORY → TISTORY</small><a href="https://github.com/kkkangkkang-creator/Texteditmaker" target="_blank" rel="noopener noreferrer">GitHub ↗</a></header>
+<section class="intro"><div class="eyebrow">SIDE STORY CARD VIEWER</div><h1>복사한 이야기를, 카드 그대로.</h1><p>Side Story의 말하기를 붙여 넣고, 티스토리에 올릴 HTML로 가져가세요.</p></section>
+<main class="workspace">
+<section class="editor" aria-label="카드 만들기">
+<div class="panel-head"><h2><span>01</span><label for="source">Side Story 내용 붙여넣기</label></h2><div class="sample-actions"><button class="quiet" id="sample">예시 보기</button><button class="quiet" id="clear">비우기</button></div></div>
+<textarea id="source" spellcheck="false" placeholder="Side Story → 말하기 → 복사한 내용을 여기에 붙여 넣으세요.&#10;&#10;**요청**&#10;&#10;질문 내용&#10;&#10;캐릭터의 답변&#10;&#10;**속마음**&#10;&#10;말하지 않은 생각"></textarea>
+<p class="hint">기존 복사 버튼으로 가져온 글·Markdown 파일·&lt;sideb-response&gt; 원문을 읽어요. 붙여 넣으면 바로 변환돼요.</p>
+<div id="format" class="format-status" role="status"></div>
+<details class="options" open><summary>카드 설정</summary><div class="fields">
+<label class="field">배치<select id="layout"><option value="deck">한 장씩 넘기기 · Side Story처럼</option><option value="stack">모든 카드 펼치기</option></select></label>
+<label class="field">테마<select id="theme"><option value="light">밝게</option><option value="dark">어둡게</option></select></label>
+<label class="field">포인트 색상<span class="inline"><input type="color" id="accent" value="#5c735c"><span class="caption" id="accent-value">#5c735c</span></span></label>
+<label class="field">본문 글꼴<select id="font"><option value="sans">고딕</option><option value="serif">명조</option></select></label>
+<label class="field">본문 크기 <span class="inline"><input type="range" id="size" min="12" max="24" value="16"><output id="size-value" for="size">16px</output></span></label>
+<label class="field">카드 최대 너비<select id="width"><option value="760">760px · 기본</option><option value="640">640px</option><option value="900">900px</option></select></label>
+<label class="field wide">질문자 표시 <input id="asker" type="text" maxlength="80" placeholder="선택 · 예: 세레나 (비워 두면 표시 안 함)"></label>
+<label class="check"><input id="include-inner" type="checkbox" checked>속마음 포함</label>
+<label class="check"><input id="open-inner" type="checkbox">속마음 처음부터 펼치기</label>
+</div></details>
+<div class="guide"><strong>티스토리에 넣는 순서</strong><ol><li>아래의 <strong>티스토리 HTML 복사</strong>를 누르세요.</li><li>티스토리 글쓰기에서 <strong>HTML 모드</strong>로 바꾸고 붙여 넣으세요.</li><li>발행 전 티스토리 미리보기에서 확인하세요.</li></ol><p>일반 편집 모드로 전환하면 코드가 바뀔 수 있어요. 넘기기나 접기가 유지되지 않으면 ‘모든 카드 펼치기’와 ‘속마음 처음부터 펼치기’를 선택해 주세요.</p></div>
+</section>
+<section class="viewer" aria-label="카드 미리보기와 내보내기">
+<div class="panel-head"><h2><span>02</span>미리보기</h2><span id="count" class="caption">0 CARDS</span></div>
+<div class="preview-shell"><div class="preview-toolbar"><span>복사되는 HTML과 같은 화면</span><div class="segmented" aria-label="미리보기 너비"><button id="desktop" aria-pressed="true">넓게</button><button id="mobile" aria-pressed="false">모바일</button></div></div><div class="empty" id="empty"><div><b>A little story, a little card.</b><p>왼쪽에 말하기 내용을 붙여 넣으면<br>여기서 카드를 확인할 수 있어요.</p><button id="empty-sample">예시로 시작하기 ↗</button></div></div><iframe id="preview" title="티스토리 카드 미리보기" sandbox="" referrerpolicy="no-referrer" hidden></iframe></div>
+<div class="export"><button id="copy-html" class="primary" disabled>티스토리 HTML 복사</button><button id="download" disabled>HTML 파일 저장 ↓</button></div>
+<p id="status" class="status" role="status" aria-live="polite"></p>
+<details class="output" id="output-panel"><summary>HTML 코드 직접 보기</summary><label for="html-output" class="caption">전체 선택해서 복사할 수도 있어요.</label><textarea id="html-output" readonly spellcheck="false" aria-label="티스토리용 HTML 코드"></textarea></details>
+<p class="notice">입력한 내용은 이 브라우저에서만 처리해요. 입력 글은 서버로 전송하거나 자동 저장하지 않아요.<br>텍스트 복사에는 원래 색상·글꼴 정보가 없어서, Side Story 기본 카드 디자인으로 재구성해요.</p>
+</section>
+</main>
+<footer class="footer">TEXTEDITMAKER · Made for your side stories.</footer>
+<script id="card-core">
+'use strict';
+const Cards = (() => {
+  const escape = text => String(text ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  function parse(value) {
+    const text = String(value ?? '').replace(/\r\n?/g,'\n').trim().replace(/^\uFEFF/,'');
+    if (!text) return {cards:[],format:'empty',warning:''};
+    const blocks = [...text.matchAll(/<sideb-response>\s*([\s\S]*?)(?:<\/sideb-response>|$)/gi)];
+    if (blocks.length) {
+      const cards = blocks.map(block => {
+        const read = tag => (block[1].match(new RegExp('<'+tag+'>\\s*([\\s\\S]*?)(?:<\\/'+tag+'>|$)','i'))?.[1] || '').trim();
+        let spoken = read('spoken');
+        const qa = spoken.match(/^\s*(?:\*\*|__)?Q\.\s*([\s\S]*?)(?:\*\*|__)?\s*\n+\s*(?:\*\*|__)?A\.(?:\*\*|__)?\s*([\s\S]*)$/i);
+        if (qa) spoken = qa[2].trim();
+        return {request:read('request'),spoken,inner:read('inner')};
+      }).filter(card => card.request || card.spoken || card.inner);
+      return {cards,format:'raw',warning:cards.length?'':'읽을 수 있는 카드가 없어요.'};
+    }
+    // Match only Side Story's exported headings. A horizontal rule inside an answer is content.
+    const headers = [...text.matchAll(/^\*\*요청(?:\s+\d+)?\*\*[ \t]*$/gm)];
+    if (!headers.length) {
+      const inner = splitInner(text);
+      return {cards:[{request:'',...inner}],format:'plain',warning:'질문 표제를 찾지 못해 답변 카드 한 장으로 표시했어요. Side Story의 전체 복사를 쓰면 질문도 구분돼요.'};
+    }
+    const cards = headers.map((heading,index) => {
+      let body = text.slice(heading.index+heading[0].length,headers[index+1]?.index ?? text.length).trim();
+      if (index < headers.length-1) body = body.replace(/\n\s*---\s*$/,'').trim();
+      // The exporter separates request and spoken with one blank line. Multiline requests stay together.
+      const split = body.search(/\n[ \t]*\n/);
+      const request = split < 0 ? body : body.slice(0,split).trim();
+      return {request,...splitInner(split < 0 ? '' : body.slice(split).trim())};
+    });
+    const prefix = text.slice(0,headers[0].index).trim();
+    return {cards,format:'markdown',warning:prefix?'첫 요청 표제 앞의 글은 카드에 포함되지 않았어요. 원문을 확인해 주세요.':''};
+  }
+  function splitInner(body) {
+    const marker = /^\*\*속마음\*\*[ \t]*$/m.exec(body);
+    return marker ? {spoken:body.slice(0,marker.index).trim(),inner:body.slice(marker.index+marker[0].length).trim()} : {spoken:body.trim(),inner:''};
+  }
+  const fonts = {sans:"system-ui,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif",serif:"'Noto Serif KR','AppleMyungjo','Batang',serif"};
+  function normalize(options={}) {
+    return {layout:options.layout==='stack'?'stack':'deck',theme:options.theme==='dark'?'dark':'light',accent:/^#[0-9a-f]{6}$/i.test(options.accent)?options.accent:'#5c735c',font:options.font==='serif'?'serif':'sans',size:Math.min(24,Math.max(12,Number(options.size)||16)),width:[640,760,900].includes(Number(options.width))?Number(options.width):760,asker:String(options.asker||'').slice(0,80),includeInner:options.includeInner!==false,openInner:options.openInner===true};
+  }
+  const css = object => Object.entries(object).map(([k,v])=>`${k}:${v}`).join(';');
+  function palette(options) {
+    const dark = options.theme==='dark';
+    const hex = options.accent.slice(1),rgb=[0,2,4].map(i=>parseInt(hex.slice(i,i+2),16));
+    const base=dark?[27,30,29]:[255,255,255],amount=dark?.17:.1;
+    const tint='#'+rgb.map((v,i)=>Math.round(v*amount+base[i]*(1-amount)).toString(16).padStart(2,'0')).join('');
+    return {paper:dark?'#1b1e1d':'#ffffff',ink:dark?'#ebece9':'#292e2b',muted:dark?'#a3aaa1':'#777d76',line:dark?'#3d433d':'#dde1d9',tint,accent:options.accent};
+  }
+  // Small, dependency-free Markdown renderer. HTML is allowlisted before entering the preview.
+  function inline(text) {
+    const tokens=[];
+    const token=html=>{tokens.push(html);return '\u0001'+(tokens.length-1)+'\u0002';};
+    let source=String(text).replace(/[\u0001\u0002]/g,'');
+    source=source.replace(/`([^`\n]+)`/g,(_,code)=>token('<code style="font-family:ui-monospace,monospace;font-size:.88em;padding:2px 4px;background:rgba(128,128,128,.12);border-radius:3px">'+escape(code)+'</code>'));
+    // Keep only harmless inline semantics; attributes (including inline handlers/styles) are removed.
+    source=source.replace(/<\/?(?:b|strong|i|em|s|del|u|small|sub|sup|br|ruby|rt|rp)(?:\s[^<>]*?)?\s*\/?>/gi,tag=>{
+      const name=tag.match(/^<\/?([a-z]+)/i)[1].toLowerCase();
+      return token('<'+(tag.startsWith('</')?'/':'')+name+'>');
+    });
+    source=escape(source).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>').replace(/__([^_]+)__/g,'<strong>$1</strong>').replace(/\*([^*\n]+)\*/g,'<em>$1</em>').replace(/(^|\s)_([^_\n]+)_(?=\s|$|[.,!?])/g,'$1<em>$2</em>').replace(/~~([^~]+)~~/g,'<s>$1</s>');
+    return source.replace(/\u0001(\d+)\u0002/g,(_,n)=>tokens[Number(n)]||'');
+  }
+  function rich(text) {
+    const lines=String(text||'').replace(/\r\n?/g,'\n').split('\n'),out=[];
+    let paragraph=[],list=[],listType='',code=null,codeLines=[];
+    const flushP=()=>{if(paragraph.length){out.push('<p style="margin:0 0 1em;font:inherit;color:inherit;line-height:inherit;white-space:normal">'+paragraph.map(inline).join('<br>')+'</p>');paragraph=[];}};
+    const flushList=()=>{if(list.length){out.push('<'+listType+' style="margin:0 0 1em;padding-left:1.6em">'+list.map(x=>'<li style="margin:0 0 .3em;font:inherit;color:inherit">'+inline(x)+'</li>').join('')+'</'+listType+'>');list=[];listType='';}};
+    for(const line of lines){
+      const fence=/^\s*(```|~~~)/.exec(line);
+      if(fence){if(code){out.push('<pre style="white-space:pre-wrap;overflow-wrap:anywhere;margin:0 0 1em;padding:12px;background:rgba(128,128,128,.1);border-radius:4px;font:13px/1.6 ui-monospace,monospace">'+escape(codeLines.join('\n'))+'</pre>');code=null;codeLines=[];}else{flushP();flushList();code=fence[1];}continue;}
+      if(code){codeLines.push(line);continue;}
+      if(!line.trim()){flushP();flushList();continue;}
+      const item=/^\s*(?:([-+*])|\d+[.)])\s+(.+)$/.exec(line);
+      if(item){flushP();const kind=item[1]?'ul':'ol';if(listType&&listType!==kind)flushList();listType=kind;list.push(item[2]);continue;}
+      flushList();
+      if(/^\s*(?:---+|\*\*\*+)\s*$/.test(line)){flushP();out.push('<hr style="margin:1.5em 0;border:0;border-top:1px solid currentColor;opacity:.2">');continue;}
+      const heading=/^(#{1,6})\s+(.+)$/.exec(line);
+      if(heading){flushP();out.push('<p style="font:inherit;font-size:1.1em;font-weight:700;margin:1em 0 .5em">'+inline(heading[2])+'</p>');continue;}
+      if(/^>\s?/.test(line)){flushP();out.push('<blockquote style="margin:0 0 1em;padding:0 0 0 14px;border-left:2px solid currentColor;opacity:.85;font:inherit">'+inline(line.replace(/^>\s?/,''))+'</blockquote>');continue;}
+      paragraph.push(line);
+    }
+    flushP();flushList();if(code)out.push('<pre style="white-space:pre-wrap;overflow-wrap:anywhere">'+escape(codeLines.join('\n'))+'</pre>');
+    return out.join('');
+  }
+  function build(cards,rawOptions={},token='ss-card') {
+    if(!cards.length)return '';
+    const options=normalize(rawOptions),p=palette(options),id=String(token).replace(/[^a-z0-9-]/gi,'')||'ss-card';
+    const deck=options.layout==='deck'&&cards.length>1;
+    const rootStyle=css({'box-sizing':'border-box',width:'100%','max-width':options.width+'px',margin:'24px auto',padding:'0',color:p.ink,'font-family':fonts[options.font],'font-size':options.size+'px','line-height':'1.9','letter-spacing':'0','text-align':'left','overflow-wrap':'anywhere','color-scheme':options.theme==='dark'?'dark':'light'});
+    let rules=`#${id},#${id} *{box-sizing:border-box}#${id} .ss-slide{display:block}#${id} .ss-card{padding:32px 38px 30px}#${id} .ss-question{font-size:30px}#${id} .ss-inner summary::-webkit-details-marker{display:none}#${id} .ss-inner summary{list-style:none}#${id} .ss-inner summary:before{content:'＋';display:inline-grid;place-items:center;width:18px;height:18px;border:1px solid ${p.line};border-radius:50%;margin-right:7px;font-size:12px;color:${p.muted}}#${id} .ss-inner[open] summary:before{content:'−'}#${id} .ss-inner summary:after{content:'펼치기';font-size:9px;font-weight:500;color:${p.muted};margin-left:7px}#${id} .ss-inner[open] summary:after{content:'접기'}#${id} .ss-choice:focus-visible~.ss-slides label{outline:2px solid ${p.accent};outline-offset:3px}@media(max-width:600px){#${id} .ss-card{padding:24px 23px}#${id} .ss-question{font-size:24px}}`;
+    if(deck){
+      rules+=`#${id} .ss-slide{display:none}`;
+      cards.forEach((_,i)=>{rules+=`#${id}-r${i}:checked~.ss-slides>.ss-slide:nth-child(${i+1}){display:block}`;});
+    }
+    const radios=deck?cards.map((_,i)=>`<input class="ss-choice" type="radio" name="${id}-cards" id="${id}-r${i}" aria-label="${i+1}번째 카드" ${i===0?'checked="checked"':''} style="position:absolute;width:1px;height:1px;opacity:0;overflow:hidden;clip-path:inset(50%)">`).join(''):'';
+    const slides=cards.map((card,i)=>{
+      const number=String(i+1).padStart(2,'0'),total=String(cards.length).padStart(2,'0');
+      const asker=options.asker?`<span style="margin-left:10px;color:${p.muted};font-size:11px;font-weight:500;letter-spacing:0">${escape(options.asker)}의 질문</span>`:'';
+      const inner=options.includeInner&&card.inner?`<details class="ss-inner" ${options.openInner?'open="open"':''} style="margin:26px 0 0;padding:0;border:0;background:none"><summary style="width:fit-content;margin:0;padding:4px 0;color:${p.accent};font-size:10px;font-weight:760;line-height:1.8;cursor:pointer">속마음</summary><div style="margin:13px 0 0 25px;padding:0 4px 0 12px;border-left:2px solid ${p.tint};font-size:.93em;line-height:1.78;color:${p.ink}">${rich(card.inner)}</div></details>`:'';
+      const arrow=(target,label,disabled)=>`<label ${disabled?'aria-disabled="true"':`for="${id}-r${target}"`} style="display:inline-flex;align-items:center;justify-content:center;min-width:36px;min-height:36px;color:${p.accent};border:1px solid ${p.line};border-radius:50%;font-size:17px;cursor:${disabled?'default':'pointer'};opacity:${disabled?'.3':'1'}" aria-label="${label==='‹'?'이전':'다음'} 카드">${label}</label>`;
+      const nav=deck?`<div style="display:flex;align-items:center;justify-content:center;gap:16px;margin:14px 0 0">${arrow(i-1,'‹',i===0)}<span style="font:11px/1.5 system-ui,sans-serif;color:${p.muted}">${i+1} / ${cards.length}</span>${arrow(i+1,'›',i===cards.length-1)}</div>`:'';
+      return `<div class="ss-slide" style="margin:0 0 ${deck?'0':'24px'}"><div class="ss-card" style="position:relative;min-height:390px;padding:clamp(24px,4vw,32px) clamp(23px,4vw,38px) 30px;overflow:hidden;border:1px solid ${p.line};border-radius:4px;background:linear-gradient(145deg,${p.paper} 0%,${p.paper} 72%,${p.tint} 145%);color:${p.ink}"><span aria-hidden="true" style="position:absolute;right:-82px;top:-92px;width:210px;height:210px;border-radius:50%;background:${p.tint};opacity:.72;pointer-events:none"></span><span aria-hidden="true" style="position:absolute;top:0;bottom:0;left:0;width:5px;background:${p.accent};opacity:.88;pointer-events:none"></span><div style="position:relative;z-index:1"><div style="font:820 10px/1.6 system-ui,sans-serif;letter-spacing:.14em;color:${p.accent}">${number}<span style="color:${p.muted};font-weight:620;letter-spacing:.08em"> / ${total}</span>${asker}</div><h3 class="ss-question" style="margin:30px 0 19px;padding:0;border:0;background:none;color:${p.ink};font-family:inherit;font-size:clamp(21px,3vw,30px);font-weight:780;line-height:1.42;letter-spacing:-.035em;white-space:pre-wrap;overflow-wrap:anywhere">${inline(card.request||'이 항목에 대한 응답')}</h3><div aria-hidden="true" style="width:42px;height:2px;margin:0 0 27px;background:${p.accent};border-radius:999px"></div><div style="font:inherit;color:${p.ink};line-height:1.9">${rich(card.spoken)}</div>${inner}</div></div>${nav}</div>`;
+    }).join('\n');
+    return `<!-- Texteditmaker · Side Story card -->\n<div id="${id}" style="${rootStyle}">\n<style>\n${rules}\n</style>\n${radios}<div class="ss-slides">\n${slides}\n</div>\n</div>\n<!-- /Texteditmaker -->`;
+  }
+  function documentOf(fragment) {
+    return '<!doctype html>\n<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Side Story 카드</title><meta http-equiv="Content-Security-Policy" content="default-src \'none\'; style-src \'unsafe-inline\'; img-src \'none\'; form-action \'none\'; base-uri \'none\'"><style>body{margin:0;padding:8px 12px;background:transparent}</style></head><body>'+fragment+'</body></html>';
+  }
+  return {escape,parse,normalize,inline,rich,build,documentOf};
+})();
+</script>
+<script>
+'use strict';
+const $=id=>document.getElementById(id);
+const controls=['layout','theme','accent','font','size','width','asker','include-inner','open-inner'];
+const sample='**요청 1**\n\n오랜만에 만난 상대에게 하고 싶은 말은?\n\n"생각보다 늦었네."\n\n창가에 서 있던 그가 고개를 돌렸다. 손에 든 책은 아까부터 같은 페이지였다.\n\n"차 식겠다. 앉아."\n\n**속마음**\n\n할 말은 더 많았다. 문이 열리는 소리를 듣자마자 전부 잊어버렸을 뿐이다.\n\n---\n\n**요청 2**\n\n오늘 하루를 한 문장으로 남긴다면?\n\n평소와 같은 하루에, 기다리던 사람이 돌아왔다.\n\n**속마음**\n\n내일도 와 주면 좋겠다.';
+const instance='ss-'+(globalThis.crypto?.randomUUID?.()||Date.now().toString(36)).replace(/[^a-z0-9-]/gi,'');
+let currentHTML='',timer,generation=0;
+function settings(){return {layout:$('layout').value,theme:$('theme').value,accent:$('accent').value,font:$('font').value,size:$('size').value,width:$('width').value,asker:$('asker').value,includeInner:$('include-inner').checked,openInner:$('open-inner').checked};}
+function update(){
+  clearTimeout(timer);
+  try{
+    const result=Cards.parse($('source').value);
+    currentHTML=Cards.build(result.cards,settings(),instance+'-'+(++generation));
+    $('count').textContent=result.cards.length+' CARD'+(result.cards.length===1?'':'S');
+    $('format').textContent=result.cards.length?({raw:'원문 태그',markdown:'Side Story 복사 형식',plain:'일반 텍스트'}[result.format]+' · '+result.cards.length+'장 인식'+(result.warning?' · '+result.warning:'')):'';
+    $('accent-value').textContent=$('accent').value;$('size-value').textContent=$('size').value+'px';
+    $('open-inner').disabled=!$('include-inner').checked;
+    $('preview').hidden=!currentHTML;$('empty').hidden=!!currentHTML;
+    if(currentHTML)$('preview').srcdoc=Cards.documentOf(currentHTML);
+    else $('preview').removeAttribute('srcdoc');
+    $('html-output').value=currentHTML;
+    $('copy-html').disabled=!currentHTML;$('download').disabled=!currentHTML;
+    $('status').textContent='';$('status').classList.remove('error');
+  }catch(error){
+    currentHTML='';$('html-output').value='';$('preview').hidden=true;$('empty').hidden=false;$('copy-html').disabled=true;$('download').disabled=true;
+    $('status').textContent='변환하지 못했어요. 입력 내용을 확인해 주세요.';$('status').classList.add('error');
+  }
+}
+function loadSample(){$('source').value=sample;update();}
+$('source').addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(update,160);});
+controls.forEach(id=>$(id).addEventListener('input',update));
+$('sample').addEventListener('click',loadSample);$('empty-sample').addEventListener('click',loadSample);
+$('clear').addEventListener('click',()=>{$('source').value='';update();$('source').focus();});
+for(const mode of ['desktop','mobile'])$(mode).addEventListener('click',()=>{$('preview').classList.toggle('mobile',mode==='mobile');$('desktop').setAttribute('aria-pressed',String(mode==='desktop'));$('mobile').setAttribute('aria-pressed',String(mode==='mobile'));});
+$('copy-html').addEventListener('click',async()=>{
+  update();if(!currentHTML)return;
+  let copied=false;
+  try{if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(currentHTML);copied=true;}}catch{}
+  if(!copied){
+    // Local files and browsers without clipboard permission still get a selectable fallback.
+    $('output-panel').open=true;$('html-output').focus();$('html-output').select();
+    try{copied=document.execCommand('copy');}catch{}
+  }
+  $('status').textContent=copied?'HTML을 복사했어요. 티스토리 HTML 모드에 붙여 넣으세요.':'자동 복사가 제한돼 있어요. 아래에서 선택된 코드를 직접 복사해 주세요.';
+});
+$('download').addEventListener('click',()=>{
+  update();if(!currentHTML)return;
+  const blob=new Blob([Cards.documentOf(currentHTML)],{type:'text/html;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');
+  a.href=url;a.download='sidestory-cards.html';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
+  $('status').textContent='카드 HTML 파일을 저장했어요.';
+});
+update();
+</script>
+</body>
+</html>
