@@ -1,0 +1,10 @@
+{
+  "name": "texteditmaker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Side Story speaking cards to Tistory HTML",
+  "scripts": {
+    "dev": "node dev-server.cjs",
+    "test": "node --test tests/*.test.cjs"
+  }
+}
